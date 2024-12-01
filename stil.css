@@ -7,7 +7,7 @@
     /* align-items: baseline; */
     background-color: #F1E0C6;
     color: #4E3B31;
-    gap: 50px;
+    gap: 20px;
 }
 
 .navbarr{
@@ -19,7 +19,8 @@
     /* background-size: 100% 250px; */
     height: 50px;
     width: 100%;
-    position: fixed;
+    position: sticky;
+    /* position: fixed; */
     /* flex-basis: 25%; */
     /* background-color: #F1E0C6; */
     /* background-color: #4E3B31; */
@@ -78,7 +79,7 @@
 
 .giris{
     order: 2;
-    padding-top: 75px;
+    /* padding-top: 75px; */
     display: grid;
     grid-template-columns: repeat(10,1fr);
     grid-template-rows: repeat(10,1fr);
@@ -183,7 +184,7 @@
     flex-direction: row;
     justify-content: space-around;
     background-color: aliceblue;
-    /* position: fixed; */
+    position: sticky;
     /* box-sizing: border-box; */
     padding: 25px;
     margin-left: 45px;
@@ -261,6 +262,175 @@
     font-style: normal;
     color: #D47C41;
 }
+
+
+
+/* --------------TARİH SAYFASI-------------- */
+
+
+.mainPart{
+    order: 2;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+    margin-left: 45px;
+    margin-right: 25px;
+}
+
+.tarihBaslik{
+    /* order: 2; */
+    /* align-self: center; */
+    text-align: center;
+    /* background-color: aliceblue; */
+    height: 100%;
+    width: 100%;
+    font-family: "Sarina", cursive;
+    /* font-weight: lighter; */
+    /* font-weight: 400; */
+    font-style: normal;
+    font-weight: lighter;
+    font-size: xx-large;
+}
+
+.butonAcil{
+    height: 45px;
+    width: 100%;
+    text-align: left;
+    font-size: large;
+    border: none;
+    background-color: transparent;
+    transition: ease 0.7s;
+    font-family: "Ruslan Display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: xx-large;
+}
+
+.butonAcil:hover{
+    /* filter: brightness(1.5); */
+    /* border-color: #4E3B31; */
+    background-color: #4E3B31;
+}
+
+.icerikMetni{
+    text-indent: 25px;
+    text-align: justify;
+}
+
+
+
+/* --------------TARİH SAYFASI-------------- */
+
+.galeriSection{
+    order: 2;
+    display: flex;
+    flex-direction: row;
+    margin-left: 45px;
+    margin-right: 25px;
+    flex-wrap: wrap;
+    gap: 2px;
+    /* grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(10,1fr); */
+}
+
+
+.galeriSection button{
+    width: 33%;
+    height: 250px;
+    background-image: url("images/galeri/alacahoyuk.jpg");
+    background-size: cover;
+    color: transparent;
+    transition: ease 0.5s;
+    border-color: transparent;
+    border-radius: 5px;
+    font-size: medium;
+    /* text-align: end; */
+    /* text-wrap: wrap; */
+    /* background-color: rgba(255, 255, 255, 0.4);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px) ; */
+    /* box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); */
+}
+
+.galeriSection button:hover{
+    color: aliceblue;
+    border-radius: 35px;
+    /* box-shadow: 35px; */
+    /* text-shadow: 35px; */
+    /* box-shadow: inset 5px 5px blue, 10px 10px red,  15px 15px green; */
+    border-color: black;
+    box-shadow: inset 10px 10px 25px black, inset -10px -10px 25px black;
+    /* background-size: 50%; */
+    /* background-color: rgba(255, 255, 255, 0.4);
+
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px) ; */
+}
+
+.bir{
+    height: 100%;
+    width: 100%;
+    text-align: end;
+    align-content: end;
+}
+
+.bir p{
+    text-indent: 15px;
+    text-align: justify;
+}
+
+.pa1{
+    text-indent: 35px !important;
+    padding-left: 15px;
+    padding-right: 20px;
+}
+
+
+.bir:hover{
+    /* box-shadow: inset 15px 10px 10px, inset -10px -10px 10px  ;
+    filter: blur(2px); */
+    
+    -webkit-backdrop-filter: blur(0.8px);
+    backdrop-filter: blur(0.8px) ;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
