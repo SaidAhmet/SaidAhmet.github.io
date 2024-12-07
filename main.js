@@ -8,6 +8,25 @@ const acilisDivi = document.getElementById("lebleb");
 const acilisDivBaslik = document.getElementById("lebBaslik");
 const genel = document.getElementById("contan");
 const scroll = document.getElementById("container");
+const contan = document.getElementById("contan");
+const navbarrr = document.getElementById("navbarrr");
+const loggo = document.getElementById("loggo");
+const menuList1 = document.getElementById("menuList1");
+const burgerButon = document.getElementById("burgerButon");
+const girisIndex = document.getElementById("girisIndex");
+const metinn = document.getElementById("metinn");
+const icMet1 = document.getElementById("icMet1");
+const girisCards = document.getElementById("girisCards");
+const fotter = document.getElementById("fotter");
+const navvlinks = document.getElementById("navvlinks");
+const yazi1 = document.getElementById("yazi1");
+const yazi2 = document.getElementById("yazi2");
+const altloggo = document.getElementById("altloggo");
+const sosyallinks = document.getElementById("sosyallinks");
+const girisImg = document.getElementById("girisImg");
+
+
+
 // const ahmet = document.getElementById("metin1");
 
 // function goster(a){
@@ -19,8 +38,11 @@ const scroll = document.getElementById("container");
 //     document.getElementById("lebleb").style.visibility = "hidden";
 // };
 
+
 window.addEventListener("load", function(){
+
     const sayfaAdi = window.location.pathname;
+
     if (sayfaAdi === "/index.html"){
     // document.getElementById("lebleb").style.backgroundColor = "white";
     // acilisDivi.style.visibility = "hidden";
@@ -35,8 +57,79 @@ window.addEventListener("load", function(){
     genel.style.overflow = "visible";
     genel.style.transition = "ease-in-out 6s";
     acilisDivi.style.transition = "ease-in-out 4s";
-}
-else if (sayfaAdi === "/tarih.html"){
+    // acilisDivi.style.display = "none";
+    window.addEventListener("resize", function(){
+        const ekranGen = window.innerWidth;
+        if(ekranGen <= 778){
+            menuList1.style.display = "none";
+            console.log("sssssss");
+            burgerButon.style.display = "flex";
+            navbarrr.style.justifyContent = "space-between";
+            console.log(this.innerWidth);
+            // this.document.getElementById("contan").style.flexDirection = "row";
+            contan.style.flexWrap = "nowrap";
+            contan.style.width = ekranGen;
+            girisIndex.style.display = "flex";
+            girisIndex.style.flexDirection = "column";
+            girisIndex.style.margin = "0";
+            girisIndex.style.height = "100%";
+
+            girisImg.style.width = ekranGen;
+            girisImg.style.margin = "0";
+            girisImg.style.padding = "0";
+
+            metinn.style.fontSize = "small";
+            metinn.style.display = "flex";
+            metinn.style.flexDirection = "column";
+            metinn.style.margin = "0";
+            // document.getElementById("metinn").style.position = "relative";
+
+            icMet1.style.flexDirection = "column";
+            icMet1.textContent = " Çorum, tarihi dokusunun yanı sıra doğal güzellikleriyle de ziyaretçilerini büyüler. Boğazköy Milli Parkı ve İncesu Kanyonu gibi doğa harikası alanlar, doğa severler için keşfedilmeyi bekleyen yerlerdir. Aynı zamanda Çorum, tarıma dayalı ekonomisiyle de tanınır ve özellikle leblebisiyle ünlüdür. Çorum leblebisi, hem Türkiye genelinde hem de yurtdışında büyük bir ilgi görür. Bu ürün, şehrin sembollerinden biri haline gelmiştir. Şehrin geleneksel el sanatları da oldukça dikkat çekicidir. Özellikle bakır işçiliği, ahşap oymacılığı ve dokumacılık gibi el sanatları, Çorum'un zengin kültürel mirasını yansıtır.";
+            // document.getElementById("metinn").style.overflow = "hidden";
+
+            // console.log(document.getElementById("contan").style.width);
+            girisCards.style.flexDirection = "column";
+            girisCards.style.margin = "0";
+            // document.getElementById("girisCards").style.position = "relative";
+
+            fotter.style.flexDirection = "column";
+            fotter.style.height = "100%";
+            // document.getElementById("fotter").style.width = "100%";
+            fotter.style.margin = "0";
+            fotter.style.justifyContent = "center";
+
+            altloggo.style.height = "100%";
+            altloggo.style.alignSelf = "center";
+
+            navvlinks.style.alignItems = "center";
+
+            yazi1.style.alignItems = "center";
+
+            yazi2.style.alignItems = "center";
+
+            sosyallinks.style.alignItems = "center";
+
+
+            // document.getElementById("navbarrr").style.width = window.innerWidth;
+            // document.getElementById("loggo").style.width = (window.innerWidth*0.5);
+            
+        }
+        else{
+            // menuList1.style.display = "flex";
+            menuList1.removeAttribute("style");
+            burgerButon.removeAttribute("style");
+            metinn.removeAttribute("style");
+            navbarrr.removeAttribute("style");
+            fotter.removeAttribute("style");
+            girisIndex.removeAttribute("style");
+            girisCards.removeAttribute("style");
+
+        }
+    });
+    
+    }
+    else if (sayfaAdi === "/tarih.html"){
         // document.getElementById("lebleb").style.backgroundColor = "white";
     // acilisDivi.style.visibility = "hidden";
     acilisDivi.style.filter = "opacity(0)";
@@ -62,8 +155,8 @@ else if (sayfaAdi === "/tarih.html"){
     document.getElementById("metin8").style.visibility = "hidden";
     document.getElementById("metin9").style.visibility = "hidden";
     document.getElementById("metin10").style.visibility = "hidden";
-}
-else if (sayfaAdi === "/galeri.html"){
+    }   
+    else if (sayfaAdi === "/galeri.html"){
     // document.getElementById("lebleb").style.backgroundColor = "white";
     // acilisDivi.style.visibility = "hidden";
     acilisDivi.style.filter = "opacity(0)";
@@ -91,8 +184,8 @@ else if (sayfaAdi === "/galeri.html"){
     document.getElementById("icerik12").style.visibility = "hidden";
     document.getElementById("icerik13").style.visibility = "hidden";
     document.getElementById("icerik14").style.visibility = "hidden";
-}
-else if (sayfaAdi === "/neyapilir.html"){
+    }
+    else if (sayfaAdi === "/neyapilir.html"){
   // document.getElementById("lebleb").style.backgroundColor = "white";
     // acilisDivi.style.visibility = "hidden";
     acilisDivi.style.filter = "opacity(0)";
@@ -281,7 +374,7 @@ else if (sayfaAdi === "/neyapilir.html"){
         }
     });
    
-}
+    }
 
 
     // document.getElementById("metin2").style.display = "none";
@@ -295,6 +388,8 @@ else if (sayfaAdi === "/neyapilir.html"){
     // document.getElementById("metin10").style.display = "none";
     // document.getElementById("contan").style.visibility = "visible";
 });
+
+
 
 // let buton1 = document.getElementById("buton1");
 // let icerik1 = document.getElementById(a);
