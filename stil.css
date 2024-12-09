@@ -55,7 +55,7 @@
 } */
 
 .navbarr{
-    order: 1;
+    order: 0;
     display: flex;
     flex-direction: row;
     /* justify-content: baseline; */
@@ -122,11 +122,34 @@
 
 .burButon{
     display: none;
-    align-items: center;
+    order: 1;
+    /* align-items: center; */
     justify-content: center;
+    /* background-color: white; */
     /* justify-content: space-between; */
+    width: 100%;
+    height: 100%;
 }
 
+.burButon button{
+    width: 100%;
+    border: none;
+    background-color: transparent;
+}
+
+.burgerMenu{
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin: 0;
+    top: 0 !important;
+}
+
+.burgerButons{
+    border: 7px solid transparent;
+    width: 100%;
+}
 
 .giris{
     order: 2;
@@ -412,7 +435,7 @@
 .galeriSection button{
     width: 33%;
     height: 250px;
-    background-image: url("images/galeri/alacahoyuk.jpg");
+    /* background-image: url("images/galeri/alacahoyuk.jpg"); */
     background-size: cover;
     color: transparent;
     transition: ease 0.5s;
@@ -425,6 +448,63 @@
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px) ; */
     /* box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); */
+}
+
+#resBut1{
+    background-image: url("images/galeri/corumKalesi.webp");
+}
+
+#resBut2{
+    background-image: url("images/galeri/alacahoyuk.jpg");
+}
+
+#resBut3{
+    background-image: url("images/galeri/hattusa.jpg");
+}
+
+#resBut4{
+    background-image: url("images/galeri/kanyon.jpg");
+}
+
+#resBut5{
+    background-image: url("images/galeri/sapinuva.jpg");
+}
+
+#resBut6{
+    background-image: url("images/galeri/tabiatPark.webp");
+}
+
+#resBut7{
+    background-image: url("images/galeri/alacahoyuk.jpg");
+}
+
+
+#resBut8{
+    background-image: url("images/galeri/alacahoyuk.jpg");
+}
+
+#resBut9{
+    background-image: url("images/galeri/alacahoyuk.jpg");
+}
+
+#resBut10{
+    background-image: url("images/galeri/alacahoyuk.jpg");
+}
+
+#resBut11{
+    background-image: url("images/galeri/alacahoyuk.jpg");
+}
+
+#resBut12{
+    background-image: url("images/galeri/alacahoyuk.jpg");
+}
+
+#resBut13{
+    background-image: url("images/galeri/alacahoyuk.jpg");
+}
+
+#resBut14{
+    background-image: url("images/galeri/alacahoyuk.jpg");
 }
 
 .galeriSection button:hover{

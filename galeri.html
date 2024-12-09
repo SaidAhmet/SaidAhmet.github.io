@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/images/temel/titleIcon1.png" type="image/x-icon">
+    <link rel="shortcut icon" href="C:\Users\armag\Desktop\corumTanitim\images\temel\titleIcon1.png" type="image/x-icon">
     <title>Galeri</title>
     <link rel="stylesheet" href="stil.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ruslan+Display&display=Electrolize&family=Sarina&display=League+Script&family=Miss+Fajardose&display=swap" rel="stylesheet">
+    <script src="main.js" defer></script>
 </head>
 <body class="container" id="contan2">
 
@@ -24,27 +25,38 @@
 
 
 
-    <nav class="navbarr">
+    <nav class="navbarr" id="navbarrr">
         <!-- <img src="images/temel/corumBaslik (2).jpg" alt=""> -->
-        <div class="logo">
+        <div class="logo" id="loggo">
             <!-- <h1>Çorum</h1> -->
             <!-- <h1>Çorum</h1> -->
             <img src="images/temel/logo3.png" alt="">
         </div>
 
-        <div class="menuList">
-            <button class="menuButtons" onclick="sayfaDegis('index.html')">Ana Sayfa</button>
-            <button class="menuButtons" onclick="sayfaDegis('tarih.html')">Tarihçe</button>
-            <button class="menuButtons" onclick="sayfaDegis('neyapilir.html')">Ne Yapılır?</button>
-            <button class="menuButtons" onclick="sayfaDegis('galeri.html')">Galeri</button>
+        <div class="menuList" id="menuList1">
+            <button class="menuButtons" onclick="sayfaDegis('../corumTanitim/index.html')">Ana Sayfa</button>
+            <button class="menuButtons" id="tarih" onclick="sayfaDegis('../corumTanitim/tarih.html')" >Tarihçe</button>
+            <button class="menuButtons" onclick="sayfaDegis('../corumTanitim/neyapilir.html')">Ne Yapılır?</button>
+            <button class="menuButtons" onclick="sayfaDegis('../corumTanitim/galeri.html')">Galeri</button>
         </div>
-    </nav>  
+
+        <div class="burButon" id="burgerButon"><button><i class="fa-solid fa-bars"></i></button></div>
+
+    </nav>
+
+    <div class="burgerMenu" id="burgerMenuButon">
+        <button class="burgerButons" onclick="sayfaDegis('../corumTanitim/index.html')">Ana Sayfa</button>
+        <button class="burgerButons" onclick="sayfaDegis('../corumTanitim/tarih.html')" >Tarihçe</button>
+        <button class="burgerButons" onclick="sayfaDegis('../corumTanitim/neyapilir.html')">Ne Yapılır?</button>
+        <button class="burgerButons" onclick="sayfaDegis('../corumTanitim/galeri.html')">Galeri</button>
+    </div>
+
 
     <div class="icerikGoster" id="icerik1" onclick="galIcCikis('icerik1')">
         <img src="images/galeri/corumKalesi.webp" alt="" class="gosterImaj" id="gorImaj">
-        <div class="galeriMetins">
+        <div class="galeriMetins" id="metins1">
         <h1>Alacahöyük Antik Kenti</h1>
-        <p>    Alacahöyük, Çorum’un Alaca ilçesinde, Hitit ve Hatti 
+        <p id="metins1P">    Alacahöyük, Çorum’un Alaca ilçesinde, Hitit ve Hatti 
             uygarlıklarına ait izler taşıyan Türkiye’nin en eski 
             yerleşim yerlerinden biridir. Güneş Kursu ve kral mezarlarıyla 
             ünlü olan höyük, Türkiye'nin ilk milli kazı alanıdır.
@@ -62,10 +74,10 @@
         </div>
     </div>
     <div class="icerikGoster" id="icerik2" onclick="galIcCikis('icerik2')">
-        <img src="images/galeri/alacahoyuk.jpg" alt="" class="gosterImaj" id="gorImaj">
-        <div class="galeriMetins">
+        <img src="images/galeri/alacahoyuk.jpg" alt="" class="gosterImaj" id="gorImaj1">
+        <div class="galeriMetins" id="metins2">
         <h1>Alacahöyük Antik Kenti</h1>
-        <p>    Alacahöyük, Çorum’un Alaca ilçesinde, Hitit ve Hatti 
+        <p id="metins2P">    Alacahöyük, Çorum’un Alaca ilçesinde, Hitit ve Hatti 
             uygarlıklarına ait izler taşıyan Türkiye’nin en eski 
             yerleşim yerlerinden biridir. Güneş Kursu ve kral mezarlarıyla 
             ünlü olan höyük, Türkiye'nin ilk milli kazı alanıdır.
@@ -83,10 +95,10 @@
         </div>
     </div>
     <div class="icerikGoster" id="icerik3" onclick="galIcCikis('icerik3')">
-        <img src="images/galeri/hattusa.jpg" alt="" class="gosterImaj" id="gorImaj">
-        <div class="galeriMetins">
+        <img src="images/galeri/hattusa.jpg" alt="" class="gosterImaj" id="gorImaj2">
+        <div class="galeriMetins" id="metins3">
         <h1>Alacahöyük Antik Kenti</h1>
-        <p>    Alacahöyük, Çorum’un Alaca ilçesinde, Hitit ve Hatti 
+        <p id="metins3P"> Alacahöyük, Çorum’un Alaca ilçesinde, Hitit ve Hatti 
             uygarlıklarına ait izler taşıyan Türkiye’nin en eski 
             yerleşim yerlerinden biridir. Güneş Kursu ve kral mezarlarıyla 
             ünlü olan höyük, Türkiye'nin ilk milli kazı alanıdır.
@@ -104,10 +116,10 @@
         </div>
     </div>
     <div class="icerikGoster" id="icerik4" onclick="galIcCikis('icerik4')">
-        <img src="images/galeri/kanyon.jpg" alt="" class="gosterImaj" id="gorImaj">
-        <div class="galeriMetins">
+        <img src="images/galeri/kanyon.jpg" alt="" class="gosterImaj" id="gorImaj3">
+        <div class="galeriMetins" id="metins4">
         <h1>Alacahöyük Antik Kenti</h1>
-        <p>    Alacahöyük, Çorum’un Alaca ilçesinde, Hitit ve Hatti 
+        <p id="metins4P">    Alacahöyük, Çorum’un Alaca ilçesinde, Hitit ve Hatti 
             uygarlıklarına ait izler taşıyan Türkiye’nin en eski 
             yerleşim yerlerinden biridir. Güneş Kursu ve kral mezarlarıyla 
             ünlü olan höyük, Türkiye'nin ilk milli kazı alanıdır.
@@ -125,10 +137,10 @@
         </div>
     </div>
     <div class="icerikGoster" id="icerik5" onclick="galIcCikis('icerik5')">
-        <img src="images/galeri/sapinuva.jpg" alt="" class="gosterImaj" id="gorImaj">
-        <div class="galeriMetins">
+        <img src="images/galeri/sapinuva.jpg" alt="" class="gosterImaj" id="gorImaj4">
+        <div class="galeriMetins" id="metins5">
         <h1>Alacahöyük Antik Kenti</h1>
-        <p>    Alacahöyük, Çorum’un Alaca ilçesinde, Hitit ve Hatti 
+        <p id="metins5P">    Alacahöyük, Çorum’un Alaca ilçesinde, Hitit ve Hatti 
             uygarlıklarına ait izler taşıyan Türkiye’nin en eski 
             yerleşim yerlerinden biridir. Güneş Kursu ve kral mezarlarıyla 
             ünlü olan höyük, Türkiye'nin ilk milli kazı alanıdır.
@@ -146,10 +158,10 @@
         </div>
     </div>
     <div class="icerikGoster" id="icerik6" onclick="galIcCikis('icerik6')">
-        <img src="images/galeri/tabiatPark.webp" alt="" class="gosterImaj" id="gorImaj">
-        <div class="galeriMetins">
+        <img src="images/galeri/tabiatPark.webp" alt="" class="gosterImaj" id="gorImaj5">
+        <div class="galeriMetins" id="metins6">
         <h1>Alacahöyük Antik Kenti</h1>
-        <p>    Alacahöyük, Çorum’un Alaca ilçesinde, Hitit ve Hatti 
+        <p id="metins6P">   Alacahöyük, Çorum’un Alaca ilçesinde, Hitit ve Hatti 
             uygarlıklarına ait izler taşıyan Türkiye’nin en eski 
             yerleşim yerlerinden biridir. Güneş Kursu ve kral mezarlarıyla 
             ünlü olan höyük, Türkiye'nin ilk milli kazı alanıdır.
@@ -167,10 +179,10 @@
         </div>
     </div>
     <div class="icerikGoster" id="icerik7" onclick="galIcCikis('icerik7')">
-        <img src="images/galeri/alacahoyuk.jpg" alt="" class="gosterImaj" id="gorImaj">
-        <div class="galeriMetins">
+        <img src="images/galeri/alacahoyuk.jpg" alt="" class="gosterImaj" id="gorImaj6">
+        <div class="galeriMetins" id="metins7">
         <h1>Alacahöyük Antik Kenti</h1>
-        <p>    Alacahöyük, Çorum’un Alaca ilçesinde, Hitit ve Hatti 
+        <p id="metins7P">   Alacahöyük, Çorum’un Alaca ilçesinde, Hitit ve Hatti 
             uygarlıklarına ait izler taşıyan Türkiye’nin en eski 
             yerleşim yerlerinden biridir. Güneş Kursu ve kral mezarlarıyla 
             ünlü olan höyük, Türkiye'nin ilk milli kazı alanıdır.
@@ -188,10 +200,10 @@
         </div>
     </div>
     <div class="icerikGoster" id="icerik8" onclick="galIcCikis('icerik8')">
-        <img src="images/galeri/alacahoyuk.jpg" alt="" class="gosterImaj" id="gorImaj">
-        <div class="galeriMetins">
+        <img src="images/galeri/alacahoyuk.jpg" alt="" class="gosterImaj" id="gorImaj7">
+        <div class="galeriMetins" id="metins8">
         <h1>Alacahöyük Antik Kenti</h1>
-        <p>    Alacahöyük, Çorum’un Alaca ilçesinde, Hitit ve Hatti 
+        <p id="metins8P">   Alacahöyük, Çorum’un Alaca ilçesinde, Hitit ve Hatti 
             uygarlıklarına ait izler taşıyan Türkiye’nin en eski 
             yerleşim yerlerinden biridir. Güneş Kursu ve kral mezarlarıyla 
             ünlü olan höyük, Türkiye'nin ilk milli kazı alanıdır.
@@ -209,10 +221,10 @@
         </div>
     </div>
     <div class="icerikGoster" id="icerik9" onclick="galIcCikis('icerik9')">
-        <img src="images/galeri/alacahoyuk.jpg" alt="" class="gosterImaj" id="gorImaj">
-        <div class="galeriMetins">
+        <img src="images/galeri/alacahoyuk.jpg" alt="" class="gosterImaj" id="gorImaj8">
+        <div class="galeriMetins" id="metins9">
         <h1>Alacahöyük Antik Kenti</h1>
-        <p>    Alacahöyük, Çorum’un Alaca ilçesinde, Hitit ve Hatti 
+        <p id="metins9P">   Alacahöyük, Çorum’un Alaca ilçesinde, Hitit ve Hatti 
             uygarlıklarına ait izler taşıyan Türkiye’nin en eski 
             yerleşim yerlerinden biridir. Güneş Kursu ve kral mezarlarıyla 
             ünlü olan höyük, Türkiye'nin ilk milli kazı alanıdır.
@@ -230,10 +242,10 @@
         </div>
     </div>
     <div class="icerikGoster" id="icerik10" onclick="galIcCikis('icerik10')">
-        <img src="images/galeri/alacahoyuk.jpg" alt="" class="gosterImaj" id="gorImaj">
-        <div class="galeriMetins">
+        <img src="images/galeri/alacahoyuk.jpg" alt="" class="gosterImaj" id="gorImaj9">
+        <div class="galeriMetins" id="metins10">
         <h1>Alacahöyük Antik Kenti</h1>
-        <p>    Alacahöyük, Çorum’un Alaca ilçesinde, Hitit ve Hatti 
+        <p id="metins10P">  Alacahöyük, Çorum’un Alaca ilçesinde, Hitit ve Hatti 
             uygarlıklarına ait izler taşıyan Türkiye’nin en eski 
             yerleşim yerlerinden biridir. Güneş Kursu ve kral mezarlarıyla 
             ünlü olan höyük, Türkiye'nin ilk milli kazı alanıdır.
@@ -251,10 +263,10 @@
         </div>
     </div>
     <div class="icerikGoster" id="icerik11" onclick="galIcCikis('icerik11')">
-        <img src="images/galeri/alacahoyuk.jpg" alt="" class="gosterImaj" id="gorImaj">
-        <div class="galeriMetins">
+        <img src="images/galeri/alacahoyuk.jpg" alt="" class="gosterImaj" id="gorImaj10">
+        <div class="galeriMetins" id="metins11">
         <h1>Alacahöyük Antik Kenti</h1>
-        <p>    Alacahöyük, Çorum’un Alaca ilçesinde, Hitit ve Hatti 
+        <p id="metins11P">  Alacahöyük, Çorum’un Alaca ilçesinde, Hitit ve Hatti 
             uygarlıklarına ait izler taşıyan Türkiye’nin en eski 
             yerleşim yerlerinden biridir. Güneş Kursu ve kral mezarlarıyla 
             ünlü olan höyük, Türkiye'nin ilk milli kazı alanıdır.
@@ -272,10 +284,10 @@
         </div>
     </div>
     <div class="icerikGoster" id="icerik12" onclick="galIcCikis('icerik12')">
-        <img src="images/galeri/alacahoyuk.jpg" alt="" class="gosterImaj" id="gorImaj">
-        <div class="galeriMetins">
+        <img src="images/galeri/alacahoyuk.jpg" alt="" class="gosterImaj" id="gorImaj11">
+        <div class="galeriMetins" id="metins12">
         <h1>Alacahöyük Antik Kenti</h1>
-        <p>    Alacahöyük, Çorum’un Alaca ilçesinde, Hitit ve Hatti 
+        <p id="metins12P">  Alacahöyük, Çorum’un Alaca ilçesinde, Hitit ve Hatti 
             uygarlıklarına ait izler taşıyan Türkiye’nin en eski 
             yerleşim yerlerinden biridir. Güneş Kursu ve kral mezarlarıyla 
             ünlü olan höyük, Türkiye'nin ilk milli kazı alanıdır.
@@ -293,10 +305,10 @@
         </div>
     </div>
     <div class="icerikGoster" id="icerik13" onclick="galIcCikis('icerik13')">
-        <img src="images/galeri/alacahoyuk.jpg" alt="" class="gosterImaj" id="gorImaj">
-        <div class="galeriMetins">
+        <img src="images/galeri/alacahoyuk.jpg" alt="" class="gosterImaj" id="gorImaj12">
+        <div class="galeriMetins" id="metins13">
         <h1>Alacahöyük Antik Kenti</h1>
-        <p>    Alacahöyük, Çorum’un Alaca ilçesinde, Hitit ve Hatti 
+        <p id="metins13P">  Alacahöyük, Çorum’un Alaca ilçesinde, Hitit ve Hatti 
             uygarlıklarına ait izler taşıyan Türkiye’nin en eski 
             yerleşim yerlerinden biridir. Güneş Kursu ve kral mezarlarıyla 
             ünlü olan höyük, Türkiye'nin ilk milli kazı alanıdır.
@@ -314,10 +326,10 @@
         </div>
     </div>
     <div class="icerikGoster" id="icerik14" onclick="galIcCikis('icerik14')">
-        <img src="images/galeri/alacahoyuk.jpg" alt="" class="gosterImaj" id="gorImaj">
-        <div class="galeriMetins">
+        <img src="images/galeri/alacahoyuk.jpg" alt="" class="gosterImaj" id="gorImaj13">
+        <div class="galeriMetins" id="metins14">
         <h1>Alacahöyük Antik Kenti</h1>
-        <p>    Alacahöyük, Çorum’un Alaca ilçesinde, Hitit ve Hatti 
+        <p id="metins14P">Alacahöyük, Çorum’un Alaca ilçesinde, Hitit ve Hatti 
             uygarlıklarına ait izler taşıyan Türkiye’nin en eski 
             yerleşim yerlerinden biridir. Güneş Kursu ve kral mezarlarıyla 
             ünlü olan höyük, Türkiye'nin ilk milli kazı alanıdır.
@@ -338,9 +350,9 @@
     
 
 
-    <div class="galeriSection">
+    <div class="galeriSection" id="galeriBolum">
         
-        <button onclick="galIcGor('icerik1')">
+        <button id="resBut1"  onclick="galIcGor('icerik1')">
             <div class="bir">
                 <p>AlacaHöyük</p>
                 <p class="pa2">
@@ -353,7 +365,7 @@
         </button>
             <!-- <a href="">AlacaHöyük</a> -->
             <!-- <button><img src="images/galeri/alacahoyuk.jpg" alt="" class="galeriPic">Alacahöyük</button> -->
-            <button style="background-image: url('images/galeri/corumKalesi.webp');" onclick="galIcGor('icerik2')">
+            <button id="resBut2" style="background-image: url('images/galeri/corumKalesi.webp');" onclick="galIcGor('icerik2')">
                 <div class="bir">
                     <p>AlacaHöyük</p>
                     <p class="pa1">
@@ -364,7 +376,7 @@
                     </p>
                 </div>
             </button>
-            <button style="background-image: url('images/galeri/hattusa.jpg');" onclick="galIcGor('icerik3')">
+            <button id="resBut3" style="background-image: url('images/galeri/hattusa.jpg');" onclick="galIcGor('icerik3')">
                 <div class="bir">
                     <p>AlacaHöyük</p>
                     <p class="pa1">
@@ -375,7 +387,7 @@
                     </p>
                 </div>
             </button>
-            <button style="background-image: url('images/galeri/kanyon.jpg');" onclick="galIcGor('icerik4')">
+            <button id="resBut4" style="background-image: url('images/galeri/kanyon.jpg');" onclick="galIcGor('icerik4')">
                 <div class="bir">
                     <p>AlacaHöyük</p>
                     <p class="pa1">
@@ -386,7 +398,7 @@
                     </p>
                 </div>
             </button>
-            <button style="background-image: url('images/galeri/sapinuva.jpg');" onclick="galIcGor('icerik5')">
+            <button id="resBut5" style="background-image: url('images/galeri/sapinuva.jpg');" onclick="galIcGor('icerik5')">
                 <div class="bir">
                     <p>AlacaHöyük</p>
                     <p class="pa1">
@@ -397,7 +409,7 @@
                     </p>
                 </div>
             </button>
-            <button style="background-image: url('images/galeri/tabiatPark.webp');" onclick="galIcGor('icerik6')">
+            <button id="resBut6" style="background-image: url('images/galeri/tabiatPark.webp');" onclick="galIcGor('icerik6')">
                 <div class="bir">
                     <p>AlacaHöyük</p>
                     <p class="pa1">
@@ -408,7 +420,7 @@
                     </p>
                 </div>
             </button>
-            <button onclick="galIcGor('icerik7')">
+            <button id="resBut7" onclick="galIcGor('icerik7')">
                 <div class="bir">
                     <p>AlacaHöyük</p>
                     <p class="pa1">
@@ -419,7 +431,7 @@
                     </p>
                 </div>
             </button>
-            <button onclick="galIcGor('icerik8')">
+            <button id="resBut8" onclick="galIcGor('icerik8')">
                 <div class="bir">
                     <p>AlacaHöyük</p>
                     <p class="pa1">
@@ -430,7 +442,7 @@
                     </p>
                 </div>
             </button>
-            <button onclick="galIcGor('icerik9')">
+            <button id="resBut9" onclick="galIcGor('icerik9')">
                 <div class="bir">
                     <p>AlacaHöyük</p>
                     <p class="pa1">
@@ -441,7 +453,7 @@
                     </p>
                 </div>
             </button>
-            <button onclick="galIcGor('icerik10')">
+            <button id="resBut10" onclick="galIcGor('icerik10')">
                 <div class="bir">
                     <p>AlacaHöyük</p>
                     <p class="pa1">
@@ -452,7 +464,7 @@
                     </p>
                 </div>
             </button>
-            <button onclick="galIcGor('icerik11')">
+            <button id="resBut11" onclick="galIcGor('icerik11')">
                 <div class="bir">
                     <p>AlacaHöyük</p>
                     <p class="pa1">
@@ -463,7 +475,7 @@
                     </p>
                 </div>
             </button>
-            <button onclick="galIcGor('icerik12')">
+            <button id="resBut12" onclick="galIcGor('icerik12')">
                 <div class="bir">
                     <p>AlacaHöyük</p>
                     <p class="pa1">
@@ -474,7 +486,7 @@
                     </p>
                 </div>
             </button>
-            <button onclick="galIcGor('icerik13')">
+            <button id="resBut13" onclick="galIcGor('icerik13')">
                 <div class="bir">
                     <p>AlacaHöyük</p>
                     <p class="pa1">
@@ -485,7 +497,7 @@
                     </p>
                 </div>
             </button>
-            <button onclick="galIcGor('icerik14')">
+            <button id="resBut14" onclick="galIcGor('icerik14')">
                 <div class="bir">
                     <p>AlacaHöyük</p>
                     <p class="pa1">
@@ -555,9 +567,9 @@
 
 
 
-    <footer class="footerr">
+    <footer class="footerr" id="fotter">
 
-        <div class="navLinks">
+        <div class="navLinks" id="navvlinks">
 
             <a href="" class="navLink"><i class="fa-solid fa-house"></i>    Ana Sayfa</a>
             <a href="" class="navLink"><i class="fa-solid fa-scroll"></i> Tarihçe</a>
@@ -566,19 +578,19 @@
 
         </div>
 
-        <div class="altyazi1">
+        <div class="altyazi1" id="yazi1">
            <h1>ÇORUM</h1>
         </div>
 
-        <div class="altLogo">
+        <div class="altLogo" id="altloggo">
             <img src="images/temel/altIcon.png" alt="">
         </div>
 
-        <div class="altyazi2">
+        <div class="altyazi2" id="yazi2">
             <h1>ÇORUM</h1>
         </div>
 
-        <div class="socialLinks">
+        <div class="socialLinks" id="sosyallinks">
 
             <a href="" class="socialLink"><i class="fa-brands fa-instagram"></i> Instagram</a>
             <a href="" class="socialLink"><i class="fa-brands fa-twitter"></i> Twitter</a>
@@ -587,12 +599,12 @@
 
         </div>
 
-    </footer>
+    </footer> 
 
 </div>
 
 
-    <script src="main.js"></script>
+    
 
 </body>
 </html>

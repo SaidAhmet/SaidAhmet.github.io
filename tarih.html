@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/images/temel/titleIcon1.png" type="image/x-icon">
+    <link rel="shortcut icon" href="C:\Users\armag\Desktop\corumTanitim\images\temel\titleIcon1.png" type="image/x-icon">
     <title>Tarihçe</title>
     <link rel="stylesheet" href="stil.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ruslan+Display&display=Electrolize&family=Sarina&display=League+Script&family=Miss+Fajardose&display=swap" rel="stylesheet">
+    <script src="main.js" defer></script>
 </head>
 <body class="container">
 
@@ -24,21 +25,31 @@
 
 
 
-    <nav class="navbarr">
-        <!-- <img src="images/temel/corumBaslik (2).jpg" alt=""> -->
-        <div class="logo">
-            <!-- <h1>Çorum</h1> -->
-            <!-- <h1>Çorum</h1> -->
-            <img src="images/temel/logo3.png" alt="">
+        <nav class="navbarr" id="navbarrr">
+            <!-- <img src="images/temel/corumBaslik (2).jpg" alt=""> -->
+            <div class="logo" id="loggo">
+                <!-- <h1>Çorum</h1> -->
+                <!-- <h1>Çorum</h1> -->
+                <img src="images/temel/logo3.png" alt="">
+            </div>
+    
+            <div class="menuList" id="menuList1">
+                <button class="menuButtons" onclick="sayfaDegis('../corumTanitim/index.html')">Ana Sayfa</button>
+                <button class="menuButtons" id="tarih" onclick="sayfaDegis('../corumTanitim/tarih.html')" >Tarihçe</button>
+                <button class="menuButtons" onclick="sayfaDegis('../corumTanitim/neyapilir.html')">Ne Yapılır?</button>
+                <button class="menuButtons" onclick="sayfaDegis('../corumTanitim/galeri.html')">Galeri</button>
+            </div>
+    
+            <div class="burButon" id="burgerButon"><button><i class="fa-solid fa-bars"></i></button></div>
+    
+        </nav>
+    
+        <div class="burgerMenu" id="burgerMenuButon">
+            <button class="burgerButons" onclick="sayfaDegis('../corumTanitim/index.html')">Ana Sayfa</button>
+            <button class="burgerButons" onclick="sayfaDegis('../corumTanitim/tarih.html')" >Tarihçe</button>
+            <button class="burgerButons" onclick="sayfaDegis('../corumTanitim/neyapilir.html')">Ne Yapılır?</button>
+            <button class="burgerButons" onclick="sayfaDegis('../corumTanitim/galeri.html')">Galeri</button>
         </div>
-
-        <div class="menuList">
-            <button class="menuButtons" onclick="sayfaDegis('index.html')">Ana Sayfa</button>
-            <button class="menuButtons" onclick="sayfaDegis('tarih.html')">Tarihçe</button>
-            <button class="menuButtons" onclick="sayfaDegis('neyapilir.html')">Ne Yapılır?</button>
-            <button class="menuButtons" onclick="sayfaDegis('galeri.html')">Galeri</button>
-        </div>
-    </nav>  
 
     <div class="mainPart">
         <h1 class="tarihBaslik">Tarih Boyunca Çorum</h1>
@@ -304,23 +315,9 @@
 
     </div>
 
+    <footer class="footerr" id="fotter">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <footer class="footerr">
-
-        <div class="navLinks">
+        <div class="navLinks" id="navvlinks">
 
             <a href="" class="navLink"><i class="fa-solid fa-house"></i>    Ana Sayfa</a>
             <a href="" class="navLink"><i class="fa-solid fa-scroll"></i> Tarihçe</a>
@@ -329,19 +326,19 @@
 
         </div>
 
-        <div class="altyazi1">
+        <div class="altyazi1" id="yazi1">
            <h1>ÇORUM</h1>
         </div>
 
-        <div class="altLogo">
+        <div class="altLogo" id="altloggo">
             <img src="images/temel/altIcon.png" alt="">
         </div>
 
-        <div class="altyazi2">
+        <div class="altyazi2" id="yazi2">
             <h1>ÇORUM</h1>
         </div>
 
-        <div class="socialLinks">
+        <div class="socialLinks" id="sosyallinks">
 
             <a href="" class="socialLink"><i class="fa-brands fa-instagram"></i> Instagram</a>
             <a href="" class="socialLink"><i class="fa-brands fa-twitter"></i> Twitter</a>
@@ -350,12 +347,12 @@
 
         </div>
 
-    </footer>
+    </footer> 
 
 </div>
 
 
-    <script src="main.js"></script>
+   
     
 
 </body>
