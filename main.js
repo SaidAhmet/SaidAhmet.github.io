@@ -35,12 +35,13 @@ let a = 0;
 window.addEventListener("DOMContentLoaded",function(){
     function sayfaDegis(url){
         window.location.href = url;
+    };
+
+    function butonlar(){
+    document.getElementById("indexButonu").onclick = () => sayfaDegis("index.html");
+    document.getElementById("tarihButonu").onclick = () => sayfaDegis("tarih.html");
+    document.getElementById("galeriButonu").onclick = () => sayfaDegis("galeri.html");
 };
-
-document.getElementById("indexButonu").onclick = () => sayfaDegis("index.html");
-document.getElementById("tarihButonu").onclick = () => sayfaDegis("tarih.html");
-document.getElementById("galeriButonu").onclick = () => sayfaDegis("galeri.html");
-
     const acilisDivi = document.getElementById("lebleb");
     const acilisDivBaslik = document.getElementById("lebBaslik");
     const genel = document.getElementById("contan");
@@ -1033,25 +1034,29 @@ document.getElementById("galeriButonu").onclick = () => sayfaDegis("galeri.html"
         acilmaEkrani();
         console.log("a1");
         normalEkran();
+        butonlar();
+
         window.addEventListener("resize",function(){
             ekranGen = window.innerWidth;
             if (sayfaAdi === "index.html" && ekranGen>800){
                 acilmaEkrani;
                 console.log("a2");
                 normalEkran();
-
+                butonlar();
             }
             else if (sayfaAdi === "index.html" && ekranGen<=800){
                 ekranGen = window.innerWidth;
                 kucukEkran();
                 console.log("a3");
+                butonlar();
 
             }
         });
     }
     else if (sayfaAdi === "index.html" && ekranGen<=800){
         kucukEkran();
-        console.log("a4");
+                butonlar();
+                console.log("a4");
 
         window.addEventListener("resize",function(){
             if (sayfaAdi === "index.html" && ekranGen>800){
@@ -1059,12 +1064,14 @@ document.getElementById("galeriButonu").onclick = () => sayfaDegis("galeri.html"
                 ekranGen = window.innerWidth;
                 console.log("a5");
                 normalEkran();
+                butonlar();
 
             }
             else if (sayfaAdi === "index.html" && ekranGen<=800){
                 ekranGen = window.innerWidth;
                 kucukEkran();
                 console.log("a6");
+                butonlar();
 
             }
         });
@@ -1074,6 +1081,8 @@ document.getElementById("galeriButonu").onclick = () => sayfaDegis("galeri.html"
     // tarihKucuk();
     tarihGizle();
     // resetTemel();
+    butonlar();
+
     window.addEventListener("resize",function(){
         ekranGen = window.innerWidth;
         if (sayfaAdi === 'tarih.html' && ekranGen>800){
@@ -1082,11 +1091,15 @@ document.getElementById("galeriButonu").onclick = () => sayfaDegis("galeri.html"
             // tarihKucuk();
             tarihGizle();
             resetTemel();
+            butonlar();
+
         }
         else if(sayfaAdi === 'tarih.html' && ekranGen<=800){
             ekranGen = window.innerWidth;
             tarihGizle();
             tarihKucuk();
+            butonlar();
+
         }
     })
     }
@@ -1094,6 +1107,8 @@ document.getElementById("galeriButonu").onclick = () => sayfaDegis("galeri.html"
         ekranGen = window.innerWidth;
         tarihGizle();
         tarihKucuk();
+        butonlar();
+
         window.addEventListener("resize",function(){
             ekranGen = window.innerWidth;
             if (sayfaAdi === 'tarih.html' && ekranGen>800){
@@ -1103,82 +1118,108 @@ document.getElementById("galeriButonu").onclick = () => sayfaDegis("galeri.html"
                 // tarihKucuk();
                 tarihGizle();
                 console.log("mantık hatası aldığımız yer burası");
+                butonlar();
+
             }
             else if(sayfaAdi === 'tarih.html' && ekranGen<=800){
                 ekranGen = window.innerWidth;
                 tarihGizle();
                 tarihKucuk();
+                butonlar();
+            
             }
         })
     }
     else if (sayfaAdi === 'galeri.html' && ekranGen>800){
         acilmaEkrani();
         galeriPage();
+        butonlar();
+
         window.addEventListener("resize",function(){
             ekranGen = window.innerWidth;
             if (sayfaAdi === 'galeri.html' && ekranGen>800){
             // galeriPage();
             galeriReset();
+            butonlar();
         
         }
             else if (sayfaAdi === 'galeri.html' && ekranGen<=800){
                 galeriKucuk();
+                butonlar();
+
             }
         })
     }
     else if (sayfaAdi === 'galeri.html' && ekranGen<=800){
         acilmaEkrani();
         galeriKucuk();
+        butonlar();
+
         window.addEventListener("resize",function(){
             ekranGen = window.innerWidth;
             if (sayfaAdi === 'galeri.html' && ekranGen<=800){
             galeriKucuk();
+            butonlar();
+
         
         }
             else if (sayfaAdi === 'galeri.html' && ekranGen>800){
             // galeriPage();
             galeriReset();
+            butonlar();
+
             }
         })
     } 
-    else if (sayfaAdi === 'neyapilir.html' && ekranGen>800){
-        console.log("ekran büyükken çalışıyor");
-        acilmaEkrani();
-        neYapilirCheckBox();
-        window.addEventListener("resize",function(){
-            ekranGen = window.innerWidth;
-            if (sayfaAdi === "neyapilir.html" && ekranGen > 800){
-                ekranGen = window.innerWidth;
-                neYapilirCheckBox();
-            }
-            else if (sayfaAdi === "neyapilir.html" && ekranGen<=800){
-                ekranGen = window.innerWidth;
-                console.log("ekran küçüldü");
-                neYapilirKucuk();
-            }
-        })
-    }
-    else if (sayfaAdi === 'neyapilir.html' && ekranGen<=800){ 
-        console.log("ekran küçükken çalışıyor");
-        temelKucuk();
-        console.log("fonktan sonra");
-        neYapilirCheckBox();
-        neYapilirKucuk();
-        window.addEventListener("resize",function(){
-            ekranGen = window.innerWidth;
-            if (sayfaAdi === "neyapilir.html" && ekranGen<=800){
-                ekranGen = window.innerWidth;
-                // neYapilirCheckBox();
-                neYapilirKucuk();
+    // else if (sayfaAdi === 'neyapilir.html' && ekranGen>800){
+    //     console.log("ekran büyükken çalışıyor");
+    //     acilmaEkrani();
+    //     neYapilirCheckBox();
+    //     butonlar();
 
-            }
-            else if (sayfaAdi === "neyapilir.html" && ekranGen>800){
-                ekranGen = window.innerWidth;
-                // console.log("ekran küçüldü");
-                // neYapilirKucuk();
-            }
-        })
-    }
+    //     window.addEventListener("resize",function(){
+    //         ekranGen = window.innerWidth;
+    //         if (sayfaAdi === "neyapilir.html" && ekranGen > 800){
+    //             ekranGen = window.innerWidth;
+    //             neYapilirCheckBox();
+    //             butonlar();
+
+    //         }
+    //         else if (sayfaAdi === "neyapilir.html" && ekranGen<=800){
+    //             ekranGen = window.innerWidth;
+    //             console.log("ekran küçüldü");
+    //             neYapilirKucuk();
+    //             butonlar();
+
+    //         }
+    //     })
+    // }
+    // else if (sayfaAdi === 'neyapilir.html' && ekranGen<=800){ 
+    //     console.log("ekran küçükken çalışıyor");
+    //     temelKucuk();
+    //     console.log("fonktan sonra");
+    //     neYapilirCheckBox();
+    //     neYapilirKucuk();
+    //     butonlar();
+        
+    //     window.addEventListener("resize",function(){
+    //         ekranGen = window.innerWidth;
+    //         if (sayfaAdi === "neyapilir.html" && ekranGen<=800){
+    //             ekranGen = window.innerWidth;
+    //             // neYapilirCheckBox();
+    //             neYapilirKucuk();
+    //             butonlar();
+
+    //         }
+    //         else if (sayfaAdi === "neyapilir.html" && ekranGen>800){
+    //             ekranGen = window.innerWidth;
+    //             // console.log("ekran küçüldü");
+    //             // neYapilirKucuk();
+    //             butonlar();
+
+    //         }
+        
+    
 console.log(sayfaAdi);
 console.log(ekranGen);
 });
