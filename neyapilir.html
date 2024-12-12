@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/images/temel/titleIcon1.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/temel/titleIcon1.png" type="image/x-icon">
     <title>Ne Yapılır ?</title>
     <link rel="stylesheet" href="stil.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ruslan+Display&display=Electrolize&family=Sarina&display=League+Script&family=Miss+Fajardose&display=swap" rel="stylesheet">
-
+    <script src="main.js" defer></script>
 </head>
 <body class="container">
 
@@ -24,29 +24,40 @@
 <div class="contain2" id="contan">
 
 
-
-
-    <nav class="navbarr">
+    <nav class="navbarr" id="navbarrr">
         <!-- <img src="images/temel/corumBaslik (2).jpg" alt=""> -->
-        <div class="logo">
+        <div class="logo" id="loggo">
             <!-- <h1>Çorum</h1> -->
             <!-- <h1>Çorum</h1> -->
             <img src="images/temel/logo3.png" alt="">
         </div>
 
-        <div class="menuList">
-            <button class="menuButtons" >Ana Sayfa</button>
-            <button class="menuButtons" >Tarihçe</button>
-            <button class="menuButtons" >Ne Yapılır?</button>
-            <button class="menuButtons" >Galeri</button>
+        <div class="menuList" id="menuList1">
+            <button class="menuButtons" onclick="sayfaDegis('index.html')">Ana Sayfa</button>
+            <button class="menuButtons" onclick="sayfaDegis('tarih.html')" >Tarihçe</button>
+            <button class="menuButtons" onclick="sayfaDegis('neyapilir.html')">Ne Yapılır?</button>
+            <button class="menuButtons" onclick="sayfaDegis('galeri.html')">Galeri</button>
         </div>
-    </nav>  
 
-    <div class="mainArea">
-        <div class="baslik"><h1>Çorum'da Yapabileceğiniz Aktiviteler</h1></div>
-        <div class="baslikHaricMain">
-            <section class="filterSection">
-                <label class="filterElements">
+        <div class="burButon" id="burgerButon"><button><i class="fa-solid fa-bars"></i></button></div>
+
+    </nav>
+
+    <div class="burgerMenu" id="burgerMenuButon">
+        <button class="burgerButons" onclick="sayfaDegis('index.html')">Ana Sayfa</button>
+        <button class="burgerButons" onclick="sayfaDegis('tarih.html')" >Tarihçe</button>
+        <button class="burgerButons" onclick="sayfaDegis('neyapilir.html')">Ne Yapılır?</button>
+        <button class="burgerButons" onclick="sayfaDegis('galeri.html')">Galeri</button>
+    </div>
+
+
+    <div class="mainArea" id="neYapMain">
+        <div class="baslik" id="neYapBaslik">
+            <h1 id="neYapBas">Çorum'da Yapabileceğiniz Aktiviteler</h1>
+        </div>
+        <div class="baslikHaricMain" id="basHarMain">
+            <section class="filterSection" id="filterSec">
+                <label class="filterElements" id="tarihFilter">
                     <input type="checkbox" name="" id="tarih">
                     <span class="filterTexts">Tarih</span>
                 </label>
@@ -62,6 +73,7 @@
                     <input type="checkbox" name="" id="kultur">
                     <span class="filterTexts">Kültür</span>
                 </label>
+            </section>
                 <!-- <label class="filterElements">
                     <input type="checkbox" name="Tarih" id="yemek">
                     <span class="filterTexts">Tarih</span>
@@ -78,7 +90,6 @@
                     <input type="checkbox" name="Tarih" id="">
                     <span class="filterTexts">Tarih</span>
                 </label> -->
-            </section>
 
             <section class="yapilacaklarElements" id="yapilicaklarElemen">
                 <div class="yapilacaklarCards" id="tarihcard1">
@@ -204,11 +215,9 @@
             </section>
         </div>
     </div>
+    <footer class="footerr" id="fotter">
 
-
-    <footer class="footerr">
-
-        <div class="navLinks">
+        <div class="navLinks" id="navvlinks">
 
             <a href="" class="navLink"><i class="fa-solid fa-house"></i>    Ana Sayfa</a>
             <a href="" class="navLink"><i class="fa-solid fa-scroll"></i> Tarihçe</a>
@@ -217,19 +226,19 @@
 
         </div>
 
-        <div class="altyazi1">
+        <div class="altyazi1" id="yazi1">
            <h1>ÇORUM</h1>
         </div>
 
-        <div class="altLogo">
+        <div class="altLogo" id="altloggo">
             <img src="images/temel/altIcon.png" alt="">
         </div>
 
-        <div class="altyazi2">
+        <div class="altyazi2" id="yazi2">
             <h1>ÇORUM</h1>
         </div>
 
-        <div class="socialLinks">
+        <div class="socialLinks" id="sosyallinks">
 
             <a href="" class="socialLink"><i class="fa-brands fa-instagram"></i> Instagram</a>
             <a href="" class="socialLink"><i class="fa-brands fa-twitter"></i> Twitter</a>
@@ -238,12 +247,12 @@
 
         </div>
 
-    </footer>
+    </footer> 
 
 </div>
 
 
-    <script src="main.js"></script>
+ 
 
 </body>
 </html>
