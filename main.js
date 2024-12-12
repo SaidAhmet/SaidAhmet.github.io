@@ -35,7 +35,7 @@ let a = 0;
 // };
 
 
-window.addEventListener("load",function(){
+window.addEventListener("DOMContentLoaded",function(){
     const acilisDivi = document.getElementById("lebleb");
     const acilisDivBaslik = document.getElementById("lebBaslik");
     const genel = document.getElementById("contan");
@@ -243,22 +243,22 @@ window.addEventListener("load",function(){
     function acilmaEkrani(){
         ekranGen = document.documentElement.clientWidth;
 
-            // console.log("çalışıyor1");
-            // // acilisDivi.style.visibility = "hidden";
-            // acilisDivi.style.filter = "opacity(0)";
-            // // acilisDivi.style.position = "50 50";
-            // acilisDivi.style.fontSize = "large";
-            // // acilisDivi.style.backgroundSize = "20px";
-            // // acilisDivBaslik.style.position = "100 250"; 
-            // // acilisDivi.style.color = "transparent";
+            console.log("çalışıyor1");
             // acilisDivi.style.visibility = "hidden";
-            // console.log(acilisDivi.style.width);
-            // // acilisDivi.style.display = "none";  
-            // // console.log("hata burada");
-            // genel.style.filter = "opacity(1)";
-            // genel.style.overflow = "visible";
-            // genel.style.transition = "ease-in-out 6s";
-            // acilisDivi.style.transition = "ease-in-out 4s";
+            acilisDivi.style.filter = "opacity(0)";
+            // acilisDivi.style.position = "50 50";
+            acilisDivi.style.fontSize = "large";
+            // acilisDivi.style.backgroundSize = "20px";
+            // acilisDivBaslik.style.position = "100 250"; 
+            // acilisDivi.style.color = "transparent";
+            acilisDivi.style.visibility = "hidden";
+            console.log(acilisDivi.style.width);
+            // acilisDivi.style.display = "none";  
+            // console.log("hata burada");
+            genel.style.filter = "opacity(1)";
+            genel.style.overflow = "visible";
+            genel.style.transition = "ease-in-out 6s";
+            acilisDivi.style.transition = "ease-in-out 4s";
             console.log("fonksiyonun bittiği yer burası");
             console.log("açılma ekranı çalışmıyor");
 
