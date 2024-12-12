@@ -35,7 +35,7 @@ let a = 0;
 // };
 
 
-window.addEventListener("DOMContentLoaded",function(){
+window.addEventListener("load",function(){
     const acilisDivi = document.getElementById("lebleb");
     const acilisDivBaslik = document.getElementById("lebBaslik");
     const genel = document.getElementById("contan");
@@ -715,247 +715,176 @@ window.addEventListener("DOMContentLoaded",function(){
 
     };
 
-    function neYapilirCheckBox(){
-        tarih.addEventListener("change",function(){
-        if (tarih.checked === true){
-            // document.getElementById("card2").style.visibility = "hidden";
-            // document.getElementById("card1").style.visibility = "hidden";
-            // gezicards.style.display = "none";
-            // yemekcards.style.display = "none";
-            // ku.style.display = "none";
-            // card2.style.display = "none";
-            // console.log("bbbbbbbb");
-            // document.getElementsByClassName("yapilacaklarCards").style.transition = "ease 3s";
-            console.log("tarih check edildi");
-            // geziCard1.style.display = "none";
-            // geziCard2.style.display = "none";
-            // geziCard3.style.display = "none";
-            kulturCard1.style.display = "none";
-            kulturCard2.style.display = "none";
-            kulturCard3.style.display = "none";
-            yemekCard1.style.display = "none";
-            yemekCard2.style.display = "none";
-            yemekCard3.style.display = "none";
-            yemekCard4.style.display = "none";
-            // document.getElementById("yapilicaklarElemen").style.transition = ("ease 5s");
-        }
-        else if(tarih.checked === false){
-            console.log("tarih check edilmedi");
-            // tarihcards.style.display = "flex";
-            // card2.style.display = "flex";
-            tarihCard1.style.display = "flex";
-            tarihCard2.style.display = "flex";
-            geziCard1.style.display = "flex";
-            geziCard2.style.display = "flex";
-            geziCard3.style.display = "flex";
-            kulturCard1.style.display = "flex";
-            kulturCard2.style.display = "flex";
-            kulturCard3.style.display = "flex";
-            yemekCard1.style.display = "flex";
-            yemekCard2.style.display = "flex";
-            yemekCard3.style.display = "flex";
-            yemekCard4.style.display = "flex";
-            // document.getElementById("yapilicaklarElemen").style.transition = ("ease 5s");
+    // function neYapilirCheckBox(){
+    //     tarih.addEventListener("change",function(){
+    //     if (tarih.checked === true){
+    //         // document.getElementById("card2").style.visibility = "hidden";
+    //         // document.getElementById("card1").style.visibility = "hidden";
+    //         // gezicards.style.display = "none";
+    //         // yemekcards.style.display = "none";
+    //         // ku.style.display = "none";
+    //         // card2.style.display = "none";
+    //         // console.log("bbbbbbbb");
+    //         // document.getElementsByClassName("yapilacaklarCards").style.transition = "ease 3s";
+    //         console.log("tarih check edildi");
+    //         // geziCard1.style.display = "none";
+    //         // geziCard2.style.display = "none";
+    //         // geziCard3.style.display = "none";
+    //         kulturCard1.style.display = "none";
+    //         kulturCard2.style.display = "none";
+    //         kulturCard3.style.display = "none";
+    //         yemekCard1.style.display = "none";
+    //         yemekCard2.style.display = "none";
+    //         yemekCard3.style.display = "none";
+    //         yemekCard4.style.display = "none";
+    //         // document.getElementById("yapilicaklarElemen").style.transition = ("ease 5s");
+    //     }
+    //     else if(tarih.checked === false){
+    //         console.log("tarih check edilmedi");
+    //         // tarihcards.style.display = "flex";
+    //         // card2.style.display = "flex";
+    //         tarihCard1.style.display = "flex";
+    //         tarihCard2.style.display = "flex";
+    //         geziCard1.style.display = "flex";
+    //         geziCard2.style.display = "flex";
+    //         geziCard3.style.display = "flex";
+    //         kulturCard1.style.display = "flex";
+    //         kulturCard2.style.display = "flex";
+    //         kulturCard3.style.display = "flex";
+    //         yemekCard1.style.display = "flex";
+    //         yemekCard2.style.display = "flex";
+    //         yemekCard3.style.display = "flex";
+    //         yemekCard4.style.display = "flex";
+    //         // document.getElementById("yapilicaklarElemen").style.transition = ("ease 5s");
 
-        }
-        });
-        gezi.addEventListener("change",function(){
-                if (gezi.checked === true){
-                    console.log(" gezi check edildi");
+    //     }
+    //     });
+    //     gezi.addEventListener("change",function(){
+    //             if (gezi.checked === true){
+    //                 console.log(" gezi check edildi");
 
-                    // document.getElementById("card2").style.visibility = "visible";
-                    // document.getElementById("card1").style.visibility = "visible";
-                    tarihCard1.style.display = "none";
-                    tarihCard2.style.display = "none";
-                    // geziCard3.style.display = "none";
-                    kulturCard1.style.display = "none";
-                    kulturCard2.style.display = "none";
-                    kulturCard3.style.display = "none";
-                    yemekCard1.style.display = "none";
-                    yemekCard2.style.display = "none";
-                    yemekCard3.style.display = "none";
-                    yemekCard4.style.display = "none";
+    //                 // document.getElementById("card2").style.visibility = "visible";
+    //                 // document.getElementById("card1").style.visibility = "visible";
+    //                 tarihCard1.style.display = "none";
+    //                 tarihCard2.style.display = "none";
+    //                 // geziCard3.style.display = "none";
+    //                 kulturCard1.style.display = "none";
+    //                 kulturCard2.style.display = "none";
+    //                 kulturCard3.style.display = "none";
+    //                 yemekCard1.style.display = "none";
+    //                 yemekCard2.style.display = "none";
+    //                 yemekCard3.style.display = "none";
+    //                 yemekCard4.style.display = "none";
             
-                }
-                else if (gezi.checked === false){
-                    console.log("gezi check edilmedi");
+    //             }
+    //             else if (gezi.checked === false){
+    //                 console.log("gezi check edilmedi");
 
-                    // card1.style.display = "flex";
-                    // card2.style.display = "flex";
-                    // card3.style.display = "flex";
-                    // card4.style.display = "flex";
-                    tarihCard1.style.display = "flex";
-                    tarihCard2.style.display = "flex";
-                    geziCard1.style.display = "flex";
-                    geziCard2.style.display = "flex";
-                    geziCard3.style.display = "flex";
-                    kulturCard1.style.display = "flex";
-                    kulturCard2.style.display = "flex";
-                    kulturCard3.style.display = "flex";
-                    yemekCard1.style.display = "flex";
-                    yemekCard2.style.display = "flex";
-                    yemekCard3.style.display = "flex";
-                    yemekCard4.style.display = "flex";
+    //                 // card1.style.display = "flex";
+    //                 // card2.style.display = "flex";
+    //                 // card3.style.display = "flex";
+    //                 // card4.style.display = "flex";
+    //                 tarihCard1.style.display = "flex";
+    //                 tarihCard2.style.display = "flex";
+    //                 geziCard1.style.display = "flex";
+    //                 geziCard2.style.display = "flex";
+    //                 geziCard3.style.display = "flex";
+    //                 kulturCard1.style.display = "flex";
+    //                 kulturCard2.style.display = "flex";
+    //                 kulturCard3.style.display = "flex";
+    //                 yemekCard1.style.display = "flex";
+    //                 yemekCard2.style.display = "flex";
+    //                 yemekCard3.style.display = "flex";
+    //                 yemekCard4.style.display = "flex";
             
-                }
-                });
-        yemek.addEventListener("change",function(){
-                    if (yemek.checked === true){
-                        // document.getElementById("card2").style.visibility = "visible";
-                        // document.getElementById("card1").style.visibility = "visible";
-                        // card3.style.display = "none";
-                        // card4.style.display = "none";
-                        // console.log("ccccccc");
-                        geziCard1.style.display = "none";
-                        geziCard2.style.display = "none";
-                        geziCard3.style.display = "none";
-                        kulturCard1.style.display = "none";
-                        kulturCard2.style.display = "none";
-                        kulturCard3.style.display = "none";
-                        tarihCard1.style.display = "none";
-                        tarihCard2.style.display = "none";
-                        // yemekCard3.style.display = "none";
-                        // yemekCard4.style.display = "none";
-                    }
-                    else{
-                        // card1.style.display = "flex";
-                        // card2.style.display = "flex";
-                        // card3.style.display = "flex";
-                        // card4.style.display = "flex";
-                        tarihCard1.style.display = "flex";
-                        tarihCard2.style.display = "flex";
-                        geziCard1.style.display = "flex";
-                        geziCard2.style.display = "flex";
-                        geziCard3.style.display = "flex";
-                        kulturCard1.style.display = "flex";
-                        kulturCard2.style.display = "flex";
-                        kulturCard3.style.display = "flex";
-                        yemekCard1.style.display = "flex";
-                        yemekCard2.style.display = "flex";
-                        yemekCard3.style.display = "flex";
-                        yemekCard4.style.display = "flex";
+    //             }
+    //             });
+    //     yemek.addEventListener("change",function(){
+    //                 if (yemek.checked === true){
+    //                     // document.getElementById("card2").style.visibility = "visible";
+    //                     // document.getElementById("card1").style.visibility = "visible";
+    //                     // card3.style.display = "none";
+    //                     // card4.style.display = "none";
+    //                     // console.log("ccccccc");
+    //                     geziCard1.style.display = "none";
+    //                     geziCard2.style.display = "none";
+    //                     geziCard3.style.display = "none";
+    //                     kulturCard1.style.display = "none";
+    //                     kulturCard2.style.display = "none";
+    //                     kulturCard3.style.display = "none";
+    //                     tarihCard1.style.display = "none";
+    //                     tarihCard2.style.display = "none";
+    //                     // yemekCard3.style.display = "none";
+    //                     // yemekCard4.style.display = "none";
+    //                 }
+    //                 else{
+    //                     // card1.style.display = "flex";
+    //                     // card2.style.display = "flex";
+    //                     // card3.style.display = "flex";
+    //                     // card4.style.display = "flex";
+    //                     tarihCard1.style.display = "flex";
+    //                     tarihCard2.style.display = "flex";
+    //                     geziCard1.style.display = "flex";
+    //                     geziCard2.style.display = "flex";
+    //                     geziCard3.style.display = "flex";
+    //                     kulturCard1.style.display = "flex";
+    //                     kulturCard2.style.display = "flex";
+    //                     kulturCard3.style.display = "flex";
+    //                     yemekCard1.style.display = "flex";
+    //                     yemekCard2.style.display = "flex";
+    //                     yemekCard3.style.display = "flex";
+    //                     yemekCard4.style.display = "flex";
                 
-                    }
-                });
-        kultur.addEventListener("change",function(){
-                    if (kultur.checked === true){
-                        // document.getElementById("card2").style.visibility = "visible";
-                        // document.getElementById("card1").style.visibility = "visible";
-                        // card3.style.display = "none";
-                        // card4.style.display = "none";
-                        // console.log("ccccccc");
-                        geziCard1.style.display = "none";
-                        geziCard2.style.display = "none";
-                        geziCard3.style.display = "none";
-                        tarihCard1.style.display = "none";
-                        tarihCard2.style.display = "none";
-                        // kulturCard3.style.display = "none";
-                        yemekCard1.style.display = "none";
-                        yemekCard2.style.display = "none";
-                        yemekCard3.style.display = "none";
-                        yemekCard4.style.display = "none";
-                    }
-                    else{
-                        // card1.style.display = "flex";
-                        // card2.style.display = "flex";
-                        // card3.style.display = "flex";
-                        // card4.style.display = "flex";
-                        tarihCard1.style.display = "flex";
-                        tarihCard2.style.display = "flex";
-                        geziCard1.style.display = "flex";
-                        geziCard2.style.display = "flex";
-                        geziCard3.style.display = "flex";
-                        kulturCard1.style.display = "flex";
-                        kulturCard2.style.display = "flex";
-                        kulturCard3.style.display = "flex";
-                        yemekCard1.style.display = "flex";
-                        yemekCard2.style.display = "flex";
-                        yemekCard3.style.display = "flex";
-                        yemekCard4.style.display = "flex";
+    //                 }
+    //             });
+    //     kultur.addEventListener("change",function(){
+    //                 if (kultur.checked === true){
+    //                     // document.getElementById("card2").style.visibility = "visible";
+    //                     // document.getElementById("card1").style.visibility = "visible";
+    //                     // card3.style.display = "none";
+    //                     // card4.style.display = "none";
+    //                     // console.log("ccccccc");
+    //                     geziCard1.style.display = "none";
+    //                     geziCard2.style.display = "none";
+    //                     geziCard3.style.display = "none";
+    //                     tarihCard1.style.display = "none";
+    //                     tarihCard2.style.display = "none";
+    //                     // kulturCard3.style.display = "none";
+    //                     yemekCard1.style.display = "none";
+    //                     yemekCard2.style.display = "none";
+    //                     yemekCard3.style.display = "none";
+    //                     yemekCard4.style.display = "none";
+    //                 }
+    //                 else{
+    //                     // card1.style.display = "flex";
+    //                     // card2.style.display = "flex";
+    //                     // card3.style.display = "flex";
+    //                     // card4.style.display = "flex";
+    //                     tarihCard1.style.display = "flex";
+    //                     tarihCard2.style.display = "flex";
+    //                     geziCard1.style.display = "flex";
+    //                     geziCard2.style.display = "flex";
+    //                     geziCard3.style.display = "flex";
+    //                     kulturCard1.style.display = "flex";
+    //                     kulturCard2.style.display = "flex";
+    //                     kulturCard3.style.display = "flex";
+    //                     yemekCard1.style.display = "flex";
+    //                     yemekCard2.style.display = "flex";
+    //                     yemekCard3.style.display = "flex";
+    //                     yemekCard4.style.display = "flex";
             
-                    }
-                });
-    };
+    //                 }
+    //             });
+    // };
 
-    function neYapilirKucuk(){
-        ekranGen = document.documentElement.clientWidth;
-        console.log("çalışıyor2");
-        menuList1.style.display = "none";
-        console.log("sssssss");
-        burgerButon.style.display = "flex";
-        navbarrr.style.justifyContent = "space-between";
-        // console.log(this.innerWidth);
-        // acilisDivi.style.backgroundColor = "black";
-        acilisDivi.style.width = "100%";
-        // acilisDivBaslik.style. 
-
-        // this.document.getElementById("contan").style.flexDirection = "row";
-        contan.style.flexWrap = "nowrap";
-        contan.style.width = ekranGen;
-        fotter.style.flexDirection = "column";
-        fotter.style.height = "100%";
-            // document.getElementById("fotter").style.width = "100%";
-        fotter.style.margin = "0";
-        fotter.style.justifyContent = "center";
-
-        altloggo.style.height = "100%";
-        altloggo.style.alignSelf = "center";
-
-        navvlinks.style.alignItems = "center";
-
-        yazi1.style.alignItems = "center";
-        yazi2.style.alignItems = "center";
-        sosyallinks.style.alignItems = "center";
-
-
-
-
-    // document.getElementById("navbarrr").style.width = window.innerWidth;
-        // document.getElementById("loggo").style.width = (window.innerWidth*0.5);
-        burgerButon.addEventListener("click", function(){
-            console.log("butona tıkladım");       
-            if (burgerMenuButon.style.display === "none"){  
-                    // burgerButon.style.display = "none";
-                        // menuList1.style.display = "flex";
-                        // menuList1.style.flexDirection = "column";
-                burgerMenuButon.style.display = "flex";
-                                    // navbarrr.style.flexDirection = "column";
-                                    // burgerButon.style.backgroundColor = "black";
-                }
-            else{
-                // burgerButon.style.display = "flex";
-                burgerMenuButon.style.display = "none";
-                }
-            })
-            // console.log("tarihkucuk çalışmıyor");
-            console.log(ekranGen);
-        // neYapMain.style.display = "none";
-        neYapMain.style.flexDirection = "column";
-        neYapMain.style.width = ekranGen;
-        neYapBaslik.style.width = "100%";
-        neYapBas.style.width = "100%";
-        basHarMain.style.width = "100%";
-        basHarMain.style.flexDirection = "column";
-        filterSec.style.width = "100%";
-        // filterSec.style.justifyContent = "baseline";
-        filterSec.style.alignSelf = "baseline";
-        filterSec.style.gap = "0px";
-        filterSec.style.flexDirection = "row";
-        filterSec.style.flexWrap = "wrap";
-        yapElem.style.width = "100%";
-        yapElem.style.flexDirection = "column";
-        yapElem.style.flexWrap = "wrap";
-
-
-
-
-    //     acilmaEkrani();
+    // function neYapilirKucuk(){
+    //     ekranGen = document.documentElement.clientWidth;
     //     console.log("çalışıyor2");
     //     menuList1.style.display = "none";
     //     console.log("sssssss");
     //     burgerButon.style.display = "flex";
     //     navbarrr.style.justifyContent = "space-between";
-    //     console.log(this.innerWidth);
+    //     // console.log(this.innerWidth);
     //     // acilisDivi.style.backgroundColor = "black";
     //     acilisDivi.style.width = "100%";
     //     // acilisDivBaslik.style. 
@@ -978,6 +907,9 @@ window.addEventListener("DOMContentLoaded",function(){
     //     yazi2.style.alignItems = "center";
     //     sosyallinks.style.alignItems = "center";
 
+
+
+
     // // document.getElementById("navbarrr").style.width = window.innerWidth;
     //     // document.getElementById("loggo").style.width = (window.innerWidth*0.5);
     //     burgerButon.addEventListener("click", function(){
@@ -993,40 +925,109 @@ window.addEventListener("DOMContentLoaded",function(){
     //         else{
     //             // burgerButon.style.display = "flex";
     //             burgerMenuButon.style.display = "none";
-    //             console.log("burger kapanması lazım");
     //             }
-    //         });
-            // console.log("tarihkucuk çalışmıyor");
-        // ekranGen = window.innerWidth;
-        // neYapMain.style.flexDirection = "column";
-        // neYapMain.style.width = ekranGen;
-        // console.log(Number(neYapMain.style.width));
-        // basHarMain.style.flexDirection = "column";
-        // basHarMain.style.width = ekranGen;
-        // console.log(basHarMain.style.width);
-        // filterSec.style.flexDirection = "row";
-        // filterSec.style.width = ekranGen;
-        // console.log(filterSec.style.width);
-        // tarihFilter.style.flexDirection = "row";
-        // yapElem.style.width = "100%";
-        // neYapBaslik.style.width = ekranGen;   
-        // console.log(neYapBaslik.style.width);
-        // tarihCard1.style.width = "2%";
-        // tarihCard2.style.width = "2%";
-        // geziCard1.style.width = "2%";
-        // geziCard2.style.width = "2%";
-        // geziCard3.style.width = "2%";
-        // yemekCard1.style.width = "2%";
-        // yemekCard2.style.width = "2%";
-        // yemekCard3.style.width = "2%";
-        // yemekCard4.style.width = "2%";
-        // kulturCard1.style.width = "2%";
-        // kulturCard2.style.width = "2%";
-        // kulturCard3.style.width = "2%";
-    };
+    //         })
+    //         // console.log("tarihkucuk çalışmıyor");
+    //         console.log(ekranGen);
+    //     // neYapMain.style.display = "none";
+    //     neYapMain.style.flexDirection = "column";
+    //     neYapMain.style.width = ekranGen;
+    //     neYapBaslik.style.width = "100%";
+    //     neYapBas.style.width = "100%";
+    //     basHarMain.style.width = "100%";
+    //     basHarMain.style.flexDirection = "column";
+    //     filterSec.style.width = "100%";
+    //     // filterSec.style.justifyContent = "baseline";
+    //     filterSec.style.alignSelf = "baseline";
+    //     filterSec.style.gap = "0px";
+    //     filterSec.style.flexDirection = "row";
+    //     filterSec.style.flexWrap = "wrap";
+    //     yapElem.style.width = "100%";
+    //     yapElem.style.flexDirection = "column";
+    //     yapElem.style.flexWrap = "wrap";
+
+
+
+
+    // //     acilmaEkrani();
+    // //     console.log("çalışıyor2");
+    // //     menuList1.style.display = "none";
+    // //     console.log("sssssss");
+    // //     burgerButon.style.display = "flex";
+    // //     navbarrr.style.justifyContent = "space-between";
+    // //     console.log(this.innerWidth);
+    // //     // acilisDivi.style.backgroundColor = "black";
+    // //     acilisDivi.style.width = "100%";
+    // //     // acilisDivBaslik.style. 
+
+    // //     // this.document.getElementById("contan").style.flexDirection = "row";
+    // //     contan.style.flexWrap = "nowrap";
+    // //     contan.style.width = ekranGen;
+    // //     fotter.style.flexDirection = "column";
+    // //     fotter.style.height = "100%";
+    // //         // document.getElementById("fotter").style.width = "100%";
+    // //     fotter.style.margin = "0";
+    // //     fotter.style.justifyContent = "center";
+
+    // //     altloggo.style.height = "100%";
+    // //     altloggo.style.alignSelf = "center";
+
+    // //     navvlinks.style.alignItems = "center";
+
+    // //     yazi1.style.alignItems = "center";
+    // //     yazi2.style.alignItems = "center";
+    // //     sosyallinks.style.alignItems = "center";
+
+    // // // document.getElementById("navbarrr").style.width = window.innerWidth;
+    // //     // document.getElementById("loggo").style.width = (window.innerWidth*0.5);
+    // //     burgerButon.addEventListener("click", function(){
+    // //         console.log("butona tıkladım");       
+    // //         if (burgerMenuButon.style.display === "none"){  
+    // //                 // burgerButon.style.display = "none";
+    // //                     // menuList1.style.display = "flex";
+    // //                     // menuList1.style.flexDirection = "column";
+    // //             burgerMenuButon.style.display = "flex";
+    // //                                 // navbarrr.style.flexDirection = "column";
+    // //                                 // burgerButon.style.backgroundColor = "black";
+    // //             }
+    // //         else{
+    // //             // burgerButon.style.display = "flex";
+    // //             burgerMenuButon.style.display = "none";
+    // //             console.log("burger kapanması lazım");
+    // //             }
+    // //         });
+    //         // console.log("tarihkucuk çalışmıyor");
+    //     // ekranGen = window.innerWidth;
+    //     // neYapMain.style.flexDirection = "column";
+    //     // neYapMain.style.width = ekranGen;
+    //     // console.log(Number(neYapMain.style.width));
+    //     // basHarMain.style.flexDirection = "column";
+    //     // basHarMain.style.width = ekranGen;
+    //     // console.log(basHarMain.style.width);
+    //     // filterSec.style.flexDirection = "row";
+    //     // filterSec.style.width = ekranGen;
+    //     // console.log(filterSec.style.width);
+    //     // tarihFilter.style.flexDirection = "row";
+    //     // yapElem.style.width = "100%";
+    //     // neYapBaslik.style.width = ekranGen;   
+    //     // console.log(neYapBaslik.style.width);
+    //     // tarihCard1.style.width = "2%";
+    //     // tarihCard2.style.width = "2%";
+    //     // geziCard1.style.width = "2%";
+    //     // geziCard2.style.width = "2%";
+    //     // geziCard3.style.width = "2%";
+    //     // yemekCard1.style.width = "2%";
+    //     // yemekCard2.style.width = "2%";
+    //     // yemekCard3.style.width = "2%";
+    //     // yemekCard4.style.width = "2%";
+    //     // kulturCard1.style.width = "2%";
+    //     // kulturCard2.style.width = "2%";
+    //     // kulturCard3.style.width = "2%";
+    // };
     if (sayfaAdi === "index.html" && ekranGen>800){
         acilmaEkrani();
         console.log("a1");
+        normalEkran();
         window.addEventListener("resize",function(){
             ekranGen = window.innerWidth;
             if (sayfaAdi === "index.html" && ekranGen>800){
