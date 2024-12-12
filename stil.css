@@ -6,7 +6,7 @@
     background-size: 25px;
     /* background-repeat: repeat; */
     /* background-size: contain; */
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
     position: fixed;
@@ -15,7 +15,7 @@
     height: 100%;
     margin: 0;
     /* padding: 0; */
-    visibility: hidden;
+    visibility: visible;
     /* transition: ease-in-out 0.2s; */
     top: 0;
     left: 0;
