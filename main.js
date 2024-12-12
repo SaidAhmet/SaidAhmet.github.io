@@ -1,6 +1,3 @@
-function sayfaDegis(url){
-        window.location.href = url;
-};
 
 let a = 0;
 
@@ -36,6 +33,14 @@ let a = 0;
 
 
 window.addEventListener("DOMContentLoaded",function(){
+    function sayfaDegis(url){
+        window.location.href = url;
+};
+
+document.getElementById("indexButonu").onclick = () => sayfaDegis("index.html");
+document.getElementById("tarihButonu").onclick = () => sayfaDegis("tarih.html");
+document.getElementById("galeriButonu").onclick = () => sayfaDegis("galeri.html");
+
     const acilisDivi = document.getElementById("lebleb");
     const acilisDivBaslik = document.getElementById("lebBaslik");
     const genel = document.getElementById("contan");
